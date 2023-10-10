@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boookings</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Booking information</h1>
+    <form action="https://httpbin.org/anything" method="post">
+      <div class="container">
+        <div class="left">
+          <label for="Name">Name</label>
+          <input type="text" name="Name" id="Name" required />
+          <label for="Email">Email</label>
+          <input type="email" name="Email" id="Email" required />
+          <label for="Password">Password</label>
+          <input type="password" name="Password" id="Password" required />
+          <label for="PickupdateTime">Pickup date/Time</label>
+          <input
+            type="date"
+            name="Pickup date/Time"
+            id="PickupdateTime"
+            required
+          />
+          <input type="time" name="" id="" required />
+          <label for="Pickup place">Pickup place</label>
+          <select name="" id="" required>
+            <option value=""></option>
+            <option value="">Home</option>
+            <option value="">Work</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+        <div class="right">
+          <label>Which taxi do you require?</label>
+          <label for="taxi">
+            <input type="radio" name="vehicle" id="taxi" value="taxi" />Taxi
+          </label>
+          <label for="van">
+            <input type="radio" name="vehicle" id="van" value="van" />Van
+          </label>
+          <label for="taxi">
+            <input
+              type="radio"
+              name="vehicle"
+              id="tuk tuk"
+              value="tuk tuk"
+            />Tuk Tuk
+          </label>
+          <p>Extras</p>
+          <div class="row">
+            <input
+              type="checkbox"
+              name="Baby seat"
+              id="Baby seat"
+              value="Baby seat"
+            />Baby seat
+          </div>
+          <div class="row">
+            <input
+              type="checkbox"
+              name="Wheelchair access"
+              id="Wheelchair access"
+              value="Wheelchair access"
+            />Wheelchair access
+          </div>
+          <div class="row">
+            <input
+              type="checkbox"
+              name="Stock tip"
+              id="Stock tip"
+              value="Stock tip"
+            />Stock tip
+          </div>
+          <label for="Drop off place/Adress">Drop off place/Adress</label>
+          <input
+            type="text"
+            name="Drop off place/Adress"
+            id="Drop off place/Adress"
+            required
+          />
+        </div>
+      </div>
+      <div class="bottom">
+        <label for="Special Instructions">Special Instructions</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="center">
+          <input type="submit" value="Submit Booking" class="button" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
